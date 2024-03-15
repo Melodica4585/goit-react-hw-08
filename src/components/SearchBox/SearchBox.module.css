@@ -1,0 +1,17 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #858080a7;
+  width: 300px;
+  margin-top: 10px;
+  background-color: #fffafa;
+}
