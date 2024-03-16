@@ -1,0 +1,16 @@
+.authNav {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(198, 17%, 20%);
+    font-size: 20px;
+}
+
+.authNav:hover {
+    color: #1994a4;
+}
+
+.authList {
+    display: flex;
+    gap: 20px;
+}

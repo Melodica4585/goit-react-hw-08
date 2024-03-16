@@ -1,0 +1,40 @@
+.label {
+    display: block;
+  }
+  
+  .button {
+    border: 1px #858080a7 solid;
+    padding: 8px 10px;
+    width: 120px;
+    background-color: #fffafa;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .button:hover {
+    border-color: rgb(25, 21, 53);
+    background-color: rgb(36, 37, 63);
+    color: #f0ebeb;
+  }
+  
+  .error {
+    display: block;
+    color: orangered;
+  }
+  
+  .field {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #858080a7;
+    background-color: #fffafa;
+    width: 250px;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 130px 0 170px;
+    gap: 10px;
+    border: 1px #858080a7;
+  }

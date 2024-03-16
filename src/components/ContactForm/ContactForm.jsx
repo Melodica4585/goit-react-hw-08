@@ -3,7 +3,7 @@ import * as Yup from "yup";
 import css from "./ContactForm.module.css";
 import { useId } from "react";
 import { useDispatch } from "react-redux";
-import { addContact } from '../../redux/contactsOps';
+import { addContact } from '../../redux/contacts/contactsOps';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
@@ -11,11 +11,11 @@ export const ContactForm = () => {
   const phoneFieldId = useId();
   const contactSchema = Yup.object().shape({
     name: Yup.string()
-      .min(5, 'Name must be at least 5 symbols')
+      .min(3, 'Name must be at least 3 symbols')
       .max(20, 'Max length is 20')
       .required('Name is required'),
     phone: Yup.string()
-      .min(5, 'Number must be at least 5 symbols')
+      .min(7, 'Number must be at least 7 symbols')
       .required('A phone number is required'),
   });
 
