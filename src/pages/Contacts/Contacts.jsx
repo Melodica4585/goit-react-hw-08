@@ -32,8 +32,8 @@ export default function Contacts() {
       {(users.length === 0 || visibleUsers.length === 0)}
       {loading && (
         <Blocks
-        height="150"
-        width="150"
+        height="100"
+        width="100"
         color="#4fa94d"
         ariaLabel="blocks-loading"
         wrapperStyle={{}}

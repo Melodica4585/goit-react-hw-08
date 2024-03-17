@@ -3,7 +3,7 @@ import { BsPersonCircle, BsTelephoneFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contacts/contactsOps";
 
-export const Contact = ({ data: { name, phone, id } }) => {
+export const Contact = ({ data: { name, number, id } }) => {
   const dispatch = useDispatch();
 
     return (
@@ -13,7 +13,7 @@ export const Contact = ({ data: { name, phone, id } }) => {
             <BsPersonCircle /> {name}
           </p>
           <span className={css.name}>
-            <BsTelephoneFill /> {phone}
+            <BsTelephoneFill /> {number}
           </span>
         </div>
         <button className={css.btn} onClick={() => dispatch(deleteContact(id)

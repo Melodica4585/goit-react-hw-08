@@ -14,7 +14,7 @@ export const ContactForm = () => {
       .min(3, 'Name must be at least 3 symbols')
       .max(20, 'Max length is 20')
       .required('Name is required'),
-    phone: Yup.string()
+    number: Yup.string()
       .min(7, 'Number must be at least 7 symbols')
       .required('A phone number is required'),
   });
@@ -22,7 +22,7 @@ export const ContactForm = () => {
   return (
     <div className={css.container}>
       <Formik
-        initialValues={{ name: '', phone: '' }}
+        initialValues={{ name: '', number: '' }}
         onSubmit={(values, action) => {
           dispatch(addContact(values));
           action.resetForm();
@@ -46,10 +46,10 @@ export const ContactForm = () => {
           <Field
             className={css.input}
             type="tel"
-            name="phone"
+            name="number"
             id={phoneFieldId}
           ></Field>
-          <ErrorMessage className={css.error} name="phone" component="span" />
+          <ErrorMessage className={css.error} name="number" component="span" />
           <button className={css.submit} type="submit">
             Add contact
           </button>
